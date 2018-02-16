@@ -6,12 +6,12 @@ import { SideBarItem } from '../Exports/Exports';
 
 export default class SideBar extends Component {
     render() {
-        return ( 
+        return (
             <div>
-                <SideBarItem icon = 'home' title = 'Rooms' />  
-                <SideBarItem icon = 'home' title = 'Add Device' />   
-                <SideBarItem icon = 'home' title = 'Add Room' />   
-                
+                <SideBarItem icon = 'dashboard' title = 'Dashboard' />
+                <SideBarItem icon = 'home' title = 'Rooms' />
+                <SideBarItem icon = 'home' title = 'Devices' />
+                <SideBarItem icon = 'info' title = 'Help' />  
             </div>
         )
     }

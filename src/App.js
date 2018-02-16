@@ -20,17 +20,17 @@ class App extends Component {
   }
 
   render() {
-    return (     
-        <div className = "App">        
-            <MenuBar toggleVisibility = {this.toggleVisibility} />   
-            <Scrollbars 
+    return (
+        <div className = "App">
+            <MenuBar toggleVisibility = {this.toggleVisibility} />
+            <Scrollbars
               autoHeight
-              autoHeightMax={1000}>       
-                <Sidebar.Pushable as={ Segment }>        
-                  <Sidebar as={Menu} animation='slide out' direction='left' width='wide' visible={this.state.visible} icon='labeled' vertical inverted>            
-                    <CustomSideBar />          
+              autoHeightMax={1000}>
+                <Sidebar.Pushable as={ Segment }>
+                  <Sidebar as={Menu} animation='push' direction='left' width='thin' visible={this.state.visible} icon='labeled' vertical inverted>            
+                    <CustomSideBar />
                   </Sidebar>
-                  <Sidebar.Pusher>             
+                  <Sidebar.Pusher>
                         <header className="App-header">
                           <Card.Group>
                             <DeviceWidget name = "Living Room Light" state = "OFF"/>
@@ -38,10 +38,10 @@ class App extends Component {
                           </Card.Group>
                         </header>
                   </Sidebar.Pusher>
-                </Sidebar.Pushable> 
-            </Scrollbars>     
-        </div> 
-      
+                </Sidebar.Pushable>
+            </Scrollbars>
+        </div>
+
     );
   }
 }
