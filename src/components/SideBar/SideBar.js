@@ -10,8 +10,8 @@ export default class SideBar extends Component {
             <div>
                 <SideBarItem icon = 'dashboard' title = 'Dashboard' />
                 <SideBarItem icon = 'home' title = 'Rooms' />
-                <SideBarItem icon = 'home' title = 'Devices' />
-                <SideBarItem icon = 'info' title = 'Help' />  
+                <SideBarItem icon = 'plug' title = 'Devices' />
+                <SideBarItem icon = 'info' title = 'Help' />
             </div>
         )
     }

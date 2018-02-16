@@ -12,30 +12,30 @@ export default class MenuBar extends Component {
 
   toggleVisibility() {
     this.props.toggleVisibility();
-  } 
+  }
 
   render() {
     return (
-      <div className="ui primary attached pointing menu"> 
-        <Menu.Item icon = 'sidebar' onClick = { this.toggleVisibility } />    
-        <div className="left logo">        
-          <div className= "item"> 
+      <div className="ui inverted primary attached pointing menu"> 
+        <Menu.Item icon = 'sidebar' onClick = { this.toggleVisibility } />
+        <div className="left logo">
+          <div className= "item">
             <p>CyberSmart</p>
           </div>
-        </div>     
-        <div className="right menu">   
+        </div>
+        <div className="right menu">
           <Dropdown item icon='announcement' pointing = 'top right'>
-            <Dropdown.Menu>              
+            <Dropdown.Menu>
               <MenuMessage message="You left x lights on this week!"/>
             </Dropdown.Menu>
           </Dropdown>
           <Dropdown item icon='settings' pointing = 'top right'>
-            <Dropdown.Menu>              
+            <Dropdown.Menu>
               <MenuIcon title = "User Settings" icon = "user"/>
               <MenuIcon title = "Hub Configuration" icon = "settings"/>
               <MenuIcon title = "Logout" icon = "sign out" />
             </Dropdown.Menu>
-          </Dropdown>          
+          </Dropdown>
         </div>
       </div>
     )
