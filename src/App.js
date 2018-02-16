@@ -27,15 +27,12 @@ class App extends Component {
               autoHeight
               autoHeightMax={1000}>
                 <Sidebar.Pushable as={ Segment }>
-                  <Sidebar as={Menu} animation='push' direction='left' width='thin' visible={this.state.visible} icon='labeled' vertical inverted>            
+                  <Sidebar as={Menu} animation='push' direction='left' width='thin' visible={this.state.visible} icon='labeled' vertical inverted>
                     <CustomSideBar />
                   </Sidebar>
                   <Sidebar.Pusher>
                         <header className="App-header">
-                          <Card.Group>
-                            <DeviceWidget name = "Living Room Light" state = "OFF"/>
-                            <DeviceWidget name = "Kitchen Light" state = "ON"/>
-                          </Card.Group>
+                        
                         </header>
                   </Sidebar.Pusher>
                 </Sidebar.Pushable>
